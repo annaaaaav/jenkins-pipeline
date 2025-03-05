@@ -19,7 +19,7 @@ pipeline {
 }
     stage('pushImage'){
         steps{
-            sh 'docker ps'
+            sh 'docker push 029571729512.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
         }
     }
    } 
